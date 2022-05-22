@@ -1,0 +1,84 @@
+form.add {
+    position: relative;
+    display: grid;
+    max-width: 800px;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    h1 {
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .foto {
+        width: 100%;
+        position: relative;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #000;
+        border-radius: 8px;
+        img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+        }
+    }
+    .inputs {
+        position: relative;
+        display: block;
+        width: 100%;
+        input {
+            width: 100%;
+            height: 40px;
+            margin-top: 30px;
+            border-radius: 8px;
+            padding-left: 15px;
+            border: 1px solid #000000;
+            background: #fff;
+        }
+        label {
+            position: absolute;
+            height: 40px;
+            left: 0;
+            margin-left: 10px;
+            padding: 5px;
+            transform: translateY(5px);
+            font-size: 10px;
+            background: #fff;
+        }
+    }
+    button {
+        width: 70%;
+        border-radius: 8px;
+        border: none;
+        margin-left: 15%;
+    }
+    .gris {
+        background: #aaa;
+    }
+    .azul {
+        background: #00BBEE;
+        color: #fff;
+    }
+}
+
+@media (orientation:landscape){
+    form {
+        width: 80%;
+    }
+}
+@media (orientation:portrait){
+    form {
+        width: 90%;
+    }
+}
